@@ -9,7 +9,7 @@ public class Scaler : MonoBehaviour
     [SerializeField] private LoopType _loopType;
     [SerializeField] private Ease _ease;
 
-    void Start()
+    private void Start()
     {
         transform.DOScale(_scale, _duration).SetLoops(_loopsCount, _loopType).SetEase(_ease);
     }
