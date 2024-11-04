@@ -6,12 +6,12 @@ public class Hacker : MonoBehaviour
 {
     [SerializeField] private Text _text;
     [SerializeField] private float _duration;
-    [SerializeField] private string _defaultmessage;
+    [SerializeField] private string _defaultMessage;
     [SerializeField] private string _newMessage;
 
     private void Start()
     {
-        _text.text = _defaultmessage;
+        _text.text = _defaultMessage;
         _text.DOText(_newMessage, _duration, true, ScrambleMode.All);
         _text.DOColor(Color.red, _duration);
     }
